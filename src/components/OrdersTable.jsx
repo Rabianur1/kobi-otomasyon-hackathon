@@ -1,6 +1,15 @@
-import { orders } from "../data/orders"
+import { useState, useEffect } from "react"
 
 function OrdersTable() {
+  const [orders, setOrders] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/orders')
+      .then(res => res.json())
+      .then(data => setOrders(data))
+      .catch(err => console.error("Siparişler çekilemedi:", err))
+  }, [])
+
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm mt-8">
       <h2 className="text-xl font-bold text-gray-800 mb-6">

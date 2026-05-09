@@ -1,6 +1,15 @@
-import { products } from "../data/products"
+import { useState, useEffect } from "react"
 
 function AIAlert() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/products')
+      .then(res => res.json())
+      .then(data => setProducts(data))
+      .catch(err => console.error("Ürünler çekilemedi:", err))
+  }, [])
+
   const criticalProducts = products.filter(
     (product) => product.stock < product.criticalStock
   )

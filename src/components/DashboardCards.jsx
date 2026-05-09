@@ -1,8 +1,22 @@
+import { useState, useEffect } from "react"
 import { Package, Clock, Truck, AlertTriangle } from "lucide-react"
-import { orders } from "../data/orders"
-import { products } from "../data/products"
 
 function DashboardCards() {
+  const [orders, setOrders] = useState([])
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/orders')
+      .then(res => res.json())
+      .then(data => setOrders(data))
+      .catch(err => console.error("Siparişler çekilemedi:", err))
+
+    fetch('http://localhost:8000/api/products')
+      .then(res => res.json())
+      .then(data => setProducts(data))
+      .catch(err => console.error("Ürünler çekilemedi:", err))
+  }, [])
+
   const totalOrders = orders.length
 
   const preparingOrders = orders.filter(

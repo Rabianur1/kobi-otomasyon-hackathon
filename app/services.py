@@ -7,6 +7,9 @@ from app.models import Product, Customer, Order
 from app.database import engine, Base
 from dotenv import load_dotenv
 
+os.environ["GEMINI_API_KEY"] = "AIzaSyAUKAskWjLVShr4dmk4rLeByxU1ECGNqFA"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAUKAskWjLVShr4dmk4rLeByxU1ECGNqFA"
+
 # .env dosyasındaki ortam değişkenlerini yükler
 load_dotenv()
 
