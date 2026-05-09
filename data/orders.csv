@@ -1,0 +1,25 @@
+id,customer,product,status,estimatedDelivery,orderDate,city,priority
+142,Ayşe Demir,Organik Sızma Zeytinyağı 1L,Kargoda,12 Mayıs 2026,8 Mayıs 2026,İstanbul,Normal
+143,Mehmet Yılmaz,Bitki Çayı Paketi (Bağışıklık Seti),Teslim Edildi,10 Mayıs 2026,7 Mayıs 2026,Ankara,Normal
+144,Canan Tekin,Seramik Kahve Kupası (Modern Sırlı),Hazırlanıyor,14 Mayıs 2026,9 Mayıs 2026,İzmir,Acil
+145,Burak Öz,Ceviz Ahşap Sunum Tahtası (Büyük),Gecikti,11 Mayıs 2026,6 Mayıs 2026,Antalya,Normal
+146,Selin Erdem,Doğal Lavanta Sabunu (El Yapımı),İptal Edildi,-,8 Mayıs 2026,Bursa,Normal
+147,Ali Kaya,Soya Mum Seti (Vanilya & Lavanta),Kargoda,13 Mayıs 2026,8 Mayıs 2026,Eskişehir,Acil
+148,Zeynep Aydın,Pamuklu Mutfak Bezi (3'lü Eko Set),Teslim Edildi,9 Mayıs 2026,6 Mayıs 2026,Muğla,Normal
+149,Deniz Bulut,Cam Saklama Kavanozu (Bambu Kapak),Hazırlanıyor,15 Mayıs 2026,9 Mayıs 2026,İstanbul,Normal
+150,Emre Yıldız,Geleneksel Ev Tarhanası 500g,Kargoda,12 Mayıs 2026,8 Mayıs 2026,Konya,Normal
+151,Fatma Şahin,Doğal Kabak Lifi (Vücut Kesesi),Gecikti,10 Mayıs 2026,5 Mayıs 2026,Adana,Acil
+152,Hakan Mert,Soğuk Sıkım Nar Ekşisi 250ml,Teslim Edildi,11 Mayıs 2026,7 Mayıs 2026,Trabzon,Normal
+153,Gizem Aksoy,El Yapımı Hakiki Deri Defter,Hazırlanıyor,16 Mayıs 2026,9 Mayıs 2026,Kocaeli,Normal
+154,Murat Genç,Organik Sızma Zeytinyağı 1L,Kargoda,13 Mayıs 2026,8 Mayıs 2026,İstanbul,Normal
+155,Pelin Yurt,Bitki Çayı Paketi (Bağışıklık Seti),Hazırlanıyor,15 Mayıs 2026,9 Mayıs 2026,Ankara,Acil
+156,Oğuzhan Koç,Ceviz Ahşap Sunum Tahtası (Büyük),Teslim Edildi,8 Mayıs 2026,5 Mayıs 2026,İzmir,Normal
+157,Ece Güler,Doğal Lavanta Sabunu (El Yapımı),Kargoda,12 Mayıs 2026,8 Mayıs 2026,Bursa,Normal
+158,Serkan Baş,Soya Mum Seti (Vanilya & Lavanta),İptal Edildi,-,7 Mayıs 2026,Samsun,Normal
+159,Aslı Çelik,Geleneksel Ev Tarhanası 500g,Hazırlanıyor,14 Mayıs 2026,9 Mayıs 2026,Aydın,Normal
+160,Kaan Demir,Soğuk Sıkım Nar Ekşisi 250ml,Kargoda,13 Mayıs 2026,8 Mayıs 2026,Mersin,Acil
+161,Merve Işık,Pamuklu Mutfak Bezi (3'lü Eko Set),Teslim Edildi,10 Mayıs 2026,7 Mayıs 2026,Edirne,Normal
+162,Emel Suna,Organik Kestane Balı 450g,Hazırlanıyor,16 Mayıs 2026,9 Mayıs 2026,İzmir,Normal
+163,Arda Turan,Bitki Yetiştirme Kiti (Fesleğen),Kargoda,12 Mayıs 2026,8 Mayıs 2026,İstanbul,Normal
+164,Lale Devrim,El Örmesi Runner (Bohem Stil),Gecikti,10 Mayıs 2026,6 Mayıs 2026,Ankara,Acil
+165,Metin Ak,Seramik Kahve Kupası (Modern Sırlı),Teslim Edildi,11 Mayıs 2026,8 Mayıs 2026,Antalya,Normal
