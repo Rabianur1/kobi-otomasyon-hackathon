@@ -242,3 +242,7 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Database files
+*.db
+kobi_data.db
