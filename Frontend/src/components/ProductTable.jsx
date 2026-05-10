@@ -1,6 +1,19 @@
-import { products } from "../data/products"
+import { useEffect, useState } from "react"
 
 function ProductTable() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data)
+      })
+      .catch((error) => {
+        console.error("Ürün verileri alınamadı:", error)
+      })
+  }, [])
+
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm mt-8">
 
@@ -17,6 +30,7 @@ function ProductTable() {
 
               <th className="pb-3">Ürün ID</th>
               <th className="pb-3">Ürün</th>
+              <th className="pb-3">Kategori</th>
               <th className="pb-3">Stok</th>
               <th className="pb-3">Kritik Seviye</th>
               <th className="pb-3">Fiyat</th>
@@ -41,6 +55,10 @@ function ProductTable() {
                   {product.name}
                 </td>
 
+                <td className="py-4">
+                  {product.category}
+                </td>
+
                 <td
                   className={`py-4 font-semibold ${
                     product.stock < product.criticalStock
@@ -56,7 +74,7 @@ function ProductTable() {
                 </td>
 
                 <td className="py-4">
-                  {product.price}
+                  {product.price} TL
                 </td>
 
               </tr>

@@ -1,9 +1,18 @@
-import { products } from "../data/products"
+import { useEffect, useState } from "react"
 
 function AIAlert() {
-  const criticalProducts = products.filter(
-    (product) => product.stock < product.criticalStock
-  )
+  const [criticalProducts, setCriticalProducts] = useState([])
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/dashboard/summary")
+      .then((response) => response.json())
+      .then((data) => {
+        setCriticalProducts(data.kritik_stok_uyarilari || [])
+      })
+      .catch((error) => {
+        console.error("Kritik stok verisi alınamadı:", error)
+      })
+  }, [])
 
   if (criticalProducts.length === 0) {
     return null
@@ -16,7 +25,10 @@ function AIAlert() {
       </h2>
 
       <p className="text-red-600 mt-2">
-        {criticalProducts.map((product) => product.name).join(", ")} kritik stok seviyesinin altında.
+        {criticalProducts
+          .map((product) => product.urun_adi)
+          .join(", ")}{" "}
+        kritik stok seviyesinin altında.
         Stok yenileme sürecinin başlatılması önerilir.
       </p>
     </div>

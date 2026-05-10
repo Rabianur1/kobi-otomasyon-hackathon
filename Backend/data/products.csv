@@ -1,51 +1,26 @@
 id,name,category,stock,criticalStock,price,monthlySales
-P001,Organik Sızma Zeytinyağı 1L,Gıda,4,10,420 TL,95
-P002,Doğal Lavanta Sabunu,Kişisel Bakım,18,15,85 TL,130
-P003,Bitki Çayı (Bağışıklık),Gıda,45,20,120 TL,210
-P004,Soya Mum Seti,Ev Dekoru,8,15,280 TL,65
-P005,Seramik Kahve Kupası,Mutfak,25,10,180 TL,85
-P006,Ahşap Sunum Tahtası,Mutfak,2,10,550 TL,40
-P007,Pamuklu Mutfak Bezi 3lü,Tekstil,60,25,95 TL,110
-P008,Cam Saklama Kavanozu,Mutfak,12,15,145 TL,75
-P009,Soğuk Sıkım Nar Ekşisi,Gıda,30,10,280 TL,150
-P010,Hakiki Deri Defter,Kırtasiye,15,10,320 TL,45
-P011,Doğal Kabak Lifi,Kişisel Bakım,7,20,65 TL,180
-P012,Geleneksel Ev Tarhanası,Gıda,55,20,165 TL,240
-P013,Organik Kestane Balı,Gıda,15,15,480 TL,110
-P014,El Örmesi Runner,Ev Dekoru,3,8,380 TL,30
-P015,Bitki Yetiştirme Kiti,Bahçe,40,15,115 TL,90
-P016,Biberiye Uçucu Yağı,Kişisel Bakım,12,10,140 TL,55
-P017,Kurutulmuş Patlıcan 50li,Gıda,22,10,190 TL,70
-P018,Doğal Nar Çiçeği Çayı,Gıda,35,15,110 TL,120
-P019,El Yapımı Seramik Kase,Mutfak,6,10,220 TL,45
-P020,Hasır Örme Sepet,Ev Dekoru,9,12,310 TL,50
-P021,Keçi Sütü Sabunu,Kişisel Bakım,25,15,75 TL,140
-P022,Organik Dut Pekmezi,Gıda,18,10,210 TL,85
-P023,Karakovan Balı 500g,Gıda,5,10,650 TL,40
-P024,Tütsü Buketi (Adaçayı),Ev Dekoru,50,20,85 TL,200
-P025,Emaye Çaydanlık Takımı,Mutfak,4,8,850 TL,25
-P026,Keten Masa Örtüsü,Tekstil,12,10,450 TL,35
-P027,Doğal Taş Havan,Mutfak,3,5,580 TL,20
-P028,Kaya Tuzu Lambası,Ev Dekoru,14,10,350 TL,60
-P029,Ihlamur Çiçeği 100g,Gıda,28,15,90 TL,130
-P030,Lavanta Uçucu Yağı,Kişisel Bakım,10,10,160 TL,80
-P031,Çam Balı 850g,Gıda,40,15,320 TL,180
-P032,Ahşap Mutfak Gereçleri,Mutfak,15,10,240 TL,70
-P033,El Yapımı Teraryum,Bahçe,2,5,420 TL,15
-P034,Gül Suyu (Saf),Kişisel Bakım,20,10,185 TL,110
-P035,Siyez Unu 1kg,Gıda,60,20,95 TL,250
-P036,Kuru İncir (Aydın),Gıda,25,10,240 TL,140
-P037,Kavrulmuş Fındık 500g,Gıda,30,15,310 TL,160
-P038,Örgü Bebek Oyuncağı,Hobi,8,10,350 TL,45
-P039,Bakır Cezve (El İşlemeli),Mutfak,5,10,480 TL,30
-P040,Ahşap Çerçeve,Ev Dekoru,20,10,150 TL,65
-P041,Bıttım Sabunu,Kişisel Bakım,35,15,80 TL,190
-P042,Domates Kurusu 250g,Gıda,45,15,120 TL,100
-P043,Nane Uçucu Yağı,Kişisel Bakım,11,10,130 TL,40
-P044,Kuru Fasulye (İspir),Gıda,50,20,180 TL,210
-P045,Süzme Çiçek Balı 1kg,Gıda,32,15,380 TL,145
-P046,Ahşap Takı Kutusu,Hobi,6,10,210 TL,25
-P047,Kil Maskesi (Doğal),Kişisel Bakım,24,10,145 TL,90
-P048,Zeytin Yaprağı Çayı,Gıda,19,10,85 TL,75
-P049,Kuru Kayısı (Gün Kurusu),Gıda,27,15,260 TL,115
-P050,El Yapımı Kapı Süsü,Ev Dekoru,4,8,290 TL,20
+P001,Vişne Reçeli (Güneşten),Gıda,4,10,180 TL,95
+P002,Karakovan Balı,Gıda,18,15,850 TL,130
+P003,Taş Baskı Zeytinyağı,Gıda,3,12,520 TL,210
+P004,Siyez Bulguru,Gıda,55,20,95 TL,175
+P005,Ev Yapımı Tarhana,Gıda,8,15,140 TL,160
+P006,Köy Tipi Erişte,Gıda,40,25,110 TL,140
+P007,Süzme Çiçek Balı,Gıda,6,10,450 TL,85
+P008,Salamura Asma Yaprağı,Gıda,25,10,220 TL,190
+P009,Dağ Kekiği,Gıda,100,30,65 TL,310
+P010,Ihlamur Çiçek,Gıda,5,15,120 TL,240
+P011,Odun Ateşi Türk Kahvesi,Gıda,45,20,90 TL,280
+P012,Kuşburnu Marmelatı,Gıda,14,15,165 TL,105
+P013,Bıttım Sabunu,Kişisel Bakım,60,20,85 TL,350
+P014,Eşek Sütü Sabunu,Kişisel Bakım,7,15,95 TL,195
+P015,Pamuklu Peştemal,Tekstil,12,10,320 TL,65
+P016,Doğal Kabak Lifi,Kişisel Bakım,4,15,70 TL,220
+P017,Saf Gül Suyu,Kişisel Bakım,18,20,190 TL,155
+P018,Bakır El İşlemesi Cezve,Mutfak,2,5,650 TL,20
+P019,Zeytin Ağacı Sunum Tabağı,Mutfak,9,5,480 TL,45
+P020,Mermer Havan,Mutfak,3,8,750 TL,15
+P021,Çömlek Yoğurt Kabı,Mutfak,22,10,130 TL,110
+P022,El Dokuması Mutfak Önlüğü,Tekstil,15,10,260 TL,40
+P023,Cevizli Sucuk,Gıda,5,15,280 TL,270
+P024,Gün Kurusu Kayısı,Gıda,80,20,240 TL,330
+P025,Közlenmiş Patlıcan Konservesi,Gıda,11,15,115 TL,90

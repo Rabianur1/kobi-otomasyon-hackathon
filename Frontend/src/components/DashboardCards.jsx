@@ -1,47 +1,60 @@
+import { useEffect, useState } from "react"
 import { Package, Clock, Truck, AlertTriangle } from "lucide-react"
-import { orders } from "../data/orders"
-import { products } from "../data/products"
 
 function DashboardCards() {
-  const totalOrders = orders.length
+  const [summary, setSummary] = useState(null)
+  const [criticalProducts, setCriticalProducts] = useState([])
 
-  const preparingOrders = orders.filter(
-    (order) => order.status === "Hazırlanıyor"
-  ).length
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/dashboard/summary")
+      .then((response) => response.json())
+      .then((data) => {
+        const parsedSummary =
+          typeof data.summary === "string"
+            ? JSON.parse(data.summary)
+            : data.summary
 
-  const shippingOrders = orders.filter(
-    (order) => order.status === "Kargoda"
-  ).length
+        setSummary(parsedSummary)
+        setCriticalProducts(data.kritik_stok_uyarilari || [])
+      })
+      .catch((error) => {
+        console.error("Dashboard verisi alınamadı:", error)
+      })
+  }, [])
 
-  const criticalStock = products.filter(
-    (product) => product.stock < product.criticalStock
-  ).length
+  if (!summary) {
+    return (
+      <div className="mt-8 text-gray-500">
+        Dashboard verileri yükleniyor...
+      </div>
+    )
+  }
 
   const cards = [
     {
       title: "Toplam Sipariş",
-      value: totalOrders,
+      value: summary.toplam_siparis,
       icon: Package,
       color: "text-gray-700",
       bg: "bg-gray-100",
     },
     {
       title: "Hazırlanan Sipariş",
-      value: preparingOrders,
+      value: summary.hazirlanan_siparis,
       icon: Clock,
       color: "text-orange-600",
       bg: "bg-orange-100",
     },
     {
       title: "Kargodaki Sipariş",
-      value: shippingOrders,
+      value: summary.kargodaki_siparis,
       icon: Truck,
       color: "text-blue-600",
       bg: "bg-blue-100",
     },
     {
       title: "Kritik Stok",
-      value: criticalStock,
+      value: criticalProducts.length,
       icon: AlertTriangle,
       color: "text-red-600",
       bg: "bg-red-100",
