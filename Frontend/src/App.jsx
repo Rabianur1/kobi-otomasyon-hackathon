@@ -27,6 +27,7 @@ function App() {
             <h1 className="text-4xl font-bold text-gray-800">
               SmartOps AI
             </h1>
+
             <p className="text-gray-500 mt-3">
               KOBİ’ler için AI destekli müşteri iletişimi ve sipariş takip sistemi
             </p>
@@ -40,9 +41,11 @@ function App() {
               <h2 className="text-2xl font-bold text-gray-800">
                 Satıcı Paneli
               </h2>
+
               <p className="text-gray-500 mt-3">
                 Siparişleri, ürünleri, stok durumunu ve müşteri mesajlarını yönetin.
               </p>
+
               <p className="mt-6 text-blue-600 font-semibold">
                 Panele Gir →
               </p>
@@ -53,13 +56,15 @@ function App() {
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition text-left"
             >
               <h2 className="text-2xl font-bold text-gray-800">
-                Müşteri Takip Asistanı
+                AI Müşteri Asistanı
               </h2>
+
               <p className="text-gray-500 mt-3">
-                Sipariş numaranızı yazarak teslimat durumunuzu öğrenin.
+                Sipariş durumu, stok bilgisi, ürün detayları ve teslimat süreçleri hakkında AI destekli anlık destek alın.
               </p>
+
               <p className="mt-6 text-blue-600 font-semibold">
-                Asistanı Aç →
+                Asistanı Başlat →
               </p>
             </button>
           </div>
@@ -79,22 +84,21 @@ function App() {
             ← Ana ekrana dön
           </button>
 
-         
           <ChatPanel
-  onNewCustomerMessage={(message) =>
-    setCustomerMessages([
-      ...customerMessages,
-      {
-        customer: "Demo Müşteri",
-        message: message,
-        time: new Date().toLocaleTimeString("tr-TR", {
-          hour: "2-digit",
-          minute: "2-digit",
-        }),
-      },
-    ])
-  }
-/>
+            onNewCustomerMessage={(message) =>
+              setCustomerMessages([
+                ...customerMessages,
+                {
+                  customer: "Demo Müşteri",
+                  message: message,
+                  time: new Date().toLocaleTimeString("tr-TR", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  }),
+                },
+              ])
+            }
+          />
         </div>
       </div>
     )
@@ -198,9 +202,11 @@ function App() {
             <h1 className="text-3xl font-bold text-gray-800">
               Siparişler
             </h1>
+
             <p className="text-gray-500 mt-2">
               Müşteri siparişlerini ve teslimat durumlarını takip edin.
             </p>
+
             <OrdersTable />
           </>
         )}
@@ -210,9 +216,11 @@ function App() {
             <h1 className="text-3xl font-bold text-gray-800">
               Ürünler
             </h1>
+
             <p className="text-gray-500 mt-2">
               Ürün stoklarını ve kritik seviyeleri görüntüleyin.
             </p>
+
             <ProductTable />
           </>
         )}

@@ -59,14 +59,15 @@ function ChatPanel({ onNewCustomerMessage }) {
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm h-fit">
       <h2 className="text-xl font-bold text-gray-800 mb-6">
-        Müşteri Takip Asistanı
+        AI Müşteri Asistanı
       </h2>
 
       <div className="space-y-4 max-h-[500px] overflow-y-auto">
         {messages.length === 0 && (
           <div className="bg-gray-100 p-4 rounded-xl text-gray-500">
-            Sipariş durumunuzu öğrenmek için sipariş numaranızı yazabilirsiniz.
-            Örnek: 128 numaralı siparişim nerede?
+            Sipariş durumu, stok bilgisi, ürün fiyatı veya teslimat süreci hakkında soru sorabilirsiniz.
+            
+            Örnek: 12 numaralı siparişim nerede? / Karakovan balı stokta var mı?
           </div>
         )}
 
@@ -98,7 +99,7 @@ function ChatPanel({ onNewCustomerMessage }) {
       <div className="mt-6 flex gap-3">
         <input
           type="text"
-          placeholder="Sipariş numarası yaz..."
+          placeholder="Sipariş, ürün veya stok hakkında soru sorun..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {

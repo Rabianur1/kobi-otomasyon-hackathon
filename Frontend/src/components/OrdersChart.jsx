@@ -13,21 +13,10 @@ function OrdersChart() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/dashboard/summary")
+    fetch("http://127.0.0.1:8000/api/orders/weekly-analysis")
       .then((response) => response.json())
       .then((result) => {
-        const summary = result.summary
-        const totalOrders = summary.toplam_siparis || 0
-
-        setData([
-          { day: "Pzt", orders: Math.max(1, Math.round(totalOrders * 0.12)) },
-          { day: "Sal", orders: Math.max(1, Math.round(totalOrders * 0.16)) },
-          { day: "Çar", orders: Math.max(1, Math.round(totalOrders * 0.10)) },
-          { day: "Per", orders: Math.max(1, Math.round(totalOrders * 0.18)) },
-          { day: "Cum", orders: Math.max(1, Math.round(totalOrders * 0.14)) },
-          { day: "Cmt", orders: Math.max(1, Math.round(totalOrders * 0.20)) },
-          { day: "Paz", orders: Math.max(1, Math.round(totalOrders * 0.10)) },
-        ])
+        setData(result)
       })
       .catch((error) => {
         console.error("Grafik verisi alınamadı:", error)
@@ -42,7 +31,7 @@ function OrdersChart() {
         </h2>
 
         <p className="text-gray-500 mt-1">
-          Backend verisine göre oluşturulan sipariş yoğunluğu
+          Sipariş tarihlerine göre oluşturulan haftalık sipariş yoğunluğu
         </p>
       </div>
 
@@ -51,7 +40,7 @@ function OrdersChart() {
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="day" />
-            <YAxis />
+            <YAxis allowDecimals={false} />
             <Tooltip />
 
             <Line

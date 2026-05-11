@@ -1,32 +1,46 @@
-id,customer,product,status,estimatedDelivery,orderDate,city,priority
-200,Ali Veli,Vişne Reçeli (Güneşten),Hazırlanıyor,13 Mayıs 2026,10 Mayıs 2026,İstanbul,Yüksek
-201,Ayşe Yılmaz,Karakovan Balı,Kargoda,12 Mayıs 2026,9 Mayıs 2026,Ankara,Normal
-202,Fatma Demir,Taş Baskı Zeytinyağı,Teslim Edildi,11 Mayıs 2026,8 Mayıs 2026,İzmir,Normal
-203,Hüseyin Çelik,Siyez Bulguru,Gecikti,10 Mayıs 2026,7 Mayıs 2026,Bursa,Normal
-204,Zeynep Kaya,Ev Yapımı Tarhana,İptal Edildi,13 Mayıs 2026,10 Mayıs 2026,Antalya,Normal
-205,Murat Aras,Köy Tipi Erişte,Hazırlanıyor,12 Mayıs 2026,9 Mayıs 2026,Gaziantep,Yüksek
-206,Elif Şahin,Süzme Çiçek Balı,Kargoda,11 Mayıs 2026,8 Mayıs 2026,Sivas,Normal
-207,Osman Aksoy,Salamura Asma Yaprağı,Teslim Edildi,10 Mayıs 2026,7 Mayıs 2026,Konya,Normal
-208,Merve Aydın,Közlenmiş Patlıcan Konservesi,Gecikti,13 Mayıs 2026,10 Mayıs 2026,Muğla,Normal
-209,Deniz Öztürk,Dağ Kekiği,İptal Edildi,12 Mayıs 2026,9 Mayıs 2026,Trabzon,Normal
-210,Ali Veli,Ihlamur Çiçek,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,İstanbul,Yüksek
-211,Ayşe Yılmaz,Odun Ateşi Türk Kahvesi,Kargoda,10 Mayıs 2026,7 Mayıs 2026,Ankara,Normal
-212,Fatma Demir,Kuşburnu Marmelatı,Teslim Edildi,13 Mayıs 2026,10 Mayıs 2026,İzmir,Normal
-213,Hüseyin Çelik,Bıttım Sabunu,Gecikti,12 Mayıs 2026,9 Mayıs 2026,Bursa,Normal
-214,Zeynep Kaya,Eşek Sütü Sabunu,İptal Edildi,11 Mayıs 2026,8 Mayıs 2026,Antalya,Normal
-215,Murat Aras,Pamuklu Peştemal,Hazırlanıyor,10 Mayıs 2026,7 Mayıs 2026,Gaziantep,Yüksek
-216,Elif Şahin,Doğal Kabak Lifi,Kargoda,13 Mayıs 2026,10 Mayıs 2026,Sivas,Normal
-217,Osman Aksoy,Saf Gül Suyu,Teslim Edildi,12 Mayıs 2026,9 Mayıs 2026,Konya,Normal
-218,Merve Aydın,Bakır El İşlemesi Cezve,Gecikti,11 Mayıs 2026,8 Mayıs 2026,Muğla,Normal
-219,Deniz Öztürk,Zeytin Ağacı Sunum Tabağı,İptal Edildi,10 Mayıs 2026,7 Mayıs 2026,Trabzon,Normal
-220,Ali Veli,Mermer Havan,Hazırlanıyor,13 Mayıs 2026,10 Mayıs 2026,İstanbul,Yüksek
-221,Ayşe Yılmaz,Çömlek Yoğurt Kabı,Kargoda,12 Mayıs 2026,9 Mayıs 2026,Ankara,Normal
-222,Fatma Demir,El Dokuması Mutfak Önlüğü,Teslim Edildi,11 Mayıs 2026,8 Mayıs 2026,İzmir,Normal
-223,Hüseyin Çelik,Cevizli Sucuk,Gecikti,10 Mayıs 2026,7 Mayıs 2026,Bursa,Normal
-224,Zeynep Kaya,Gün Kurusu Kayısı,İptal Edildi,13 Mayıs 2026,10 Mayıs 2026,Antalya,Normal
-225,Ayşe Yılmaz,Vişne Reçeli (Güneşten),Teslim Edildi,9 Mayıs 2026,7 Mayıs 2026,İstanbul,Normal
-226,Mehmet Demir,Karakovan Balı,Teslim Edildi,10 Mayıs 2026,7 Mayıs 2026,Ankara,Yüksek
-227,Canan Aydın,Taş Baskı Zeytinyağı,Gecikti,9 Mayıs 2026,7 Mayıs 2026,İzmir,Normal
-228,Selim Kaya,Siyez Bulguru,Teslim Edildi,9 Mayıs 2026,7 Mayıs 2026,Bursa,Normal
-229,Derya Deniz,Ev Yapımı Tarhana,Teslim Edildi,10 Mayıs 2026,8 Mayıs 2026,Antalya,Normal
-230,Emir Kozcu,Vişne Reçeli (Güneşten),Kargoda,11 Mayıs 2026,8 Mayıs 2026,Eskişehir,Normal
+id,customer,product,status,estimatedDelivery,orderDate,shippedDate,deliveredDate,city,priority
+401,Emel Sayın,Vişne Reçeli (Güneşten),Teslim Edildi,7 Mayıs 2026,4 Mayıs 2026,5 Mayıs 2026,7 Mayıs 2026,İstanbul,Normal
+402,Zeki Müren,Karakovan Balı,Teslim Edildi,7 Mayıs 2026,4 Mayıs 2026,5 Mayıs 2026,7 Mayıs 2026,Ankara,Yüksek
+403,Müslüm Gürses,Taş Baskı Zeytinyağı,Teslim Edildi,7 Mayıs 2026,4 Mayıs 2026,5 Mayıs 2026,7 Mayıs 2026,Şanlıurfa,Normal
+404,Neşet Ertaş,Siyez Bulguru,Teslim Edildi,7 Mayıs 2026,4 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,Kırşehir,Normal
+405,Barış Manço,Ev Yapımı Tarhana,Gecikti,7 Mayıs 2026,4 Mayıs 2026,6 Mayıs 2026,,İstanbul,Normal
+406,Kemal Sunal,Köy Tipi Erişte,Teslim Edildi,7 Mayıs 2026,4 Mayıs 2026,5 Mayıs 2026,7 Mayıs 2026,Malatya,Normal
+407,Adile Naşit,Süzme Çiçek Balı,İptal Edildi,7 Mayıs 2026,4 Mayıs 2026,,,İstanbul,Normal
+408,Halit Akçatepe,Salamura Asma Yaprağı,Teslim Edildi,8 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,8 Mayıs 2026,Tokat,Normal
+409,Tarık Akan,Dağ Kekiği,Teslim Edildi,8 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,8 Mayıs 2026,Antalya,Normal
+410,Filiz Akın,Ihlamur Çiçek,Teslim Edildi,8 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,7 Mayıs 2026,Bursa,Normal
+411,Cüneyt Arkın,Odun Ateşi Türk Kahvesi,Kargoda,8 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,,Eskişehir,Yüksek
+412,Fatma Girik,Kuşburnu Marmelatı,Kargoda,9 Mayıs 2026,5 Mayıs 2026,7 Mayıs 2026,,Muğla,Normal
+413,Hülya Koçyiğit,Bıttım Sabunu,Kargoda,8 Mayıs 2026,5 Mayıs 2026,6 Mayıs 2026,,Siirt,Normal
+414,Münir Özkul,Eşek Sütü Sabunu,Kargoda,9 Mayıs 2026,6 Mayıs 2026,8 Mayıs 2026,,İzmir,Normal
+415,Şener Şen,Pamuklu Peştemal,Kargoda,9 Mayıs 2026,6 Mayıs 2026,7 Mayıs 2026,,Denizli,Yüksek
+416,İlyas Salman,Doğal Kabak Lifi,Kargoda,10 Mayıs 2026,6 Mayıs 2026,8 Mayıs 2026,,Aydın,Normal
+417,Ayşen Gruda,Saf Gül Suyu,Gecikti,8 Mayıs 2026,6 Mayıs 2026,7 Mayıs 2026,,Isparta,Normal
+418,Zeki Alasya,Bakır El İşlemesi Cezve,Kargoda,10 Mayıs 2026,6 Mayıs 2026,7 Mayıs 2026,,Gaziantep,Normal
+419,Metin Akpınar,Zeytin Ağacı Sunum Tabağı,Kargoda,11 Mayıs 2026,7 Mayıs 2026,8 Mayıs 2026,,Çanakkale,Normal
+420,Sadri Alışık,Mermer Havan,Hazırlanıyor,11 Mayıs 2026,7 Mayıs 2026,,,Afyon,Normal
+421,Çolpan İlhan,Çömlek Yoğurt Kabı,Hazırlanıyor,10 Mayıs 2026,7 Mayıs 2026,,,Nevşehir,Normal
+422,Oya Aydoğan,El Dokuması Mutfak Önlüğü,Hazırlanıyor,10 Mayıs 2026,7 Mayıs 2026,,,Bolu,Normal
+423,Erol Taş,Cevizli Sucuk,Kargoda,10 Mayıs 2026,7 Mayıs 2026,8 Mayıs 2026,,Gümüşhane,Normal
+424,Hulusi Kentmen,Gün Kurusu Kayısı,Hazırlanıyor,10 Mayıs 2026,7 Mayıs 2026,,,Malatya,Normal
+425,Nubar Terziyan,Közlenmiş Patlıcan Konservesi,İptal Edildi,10 Mayıs 2026,7 Mayıs 2026,,,Bursa,Normal
+426,Belgin Doruk,Vişne Reçeli (Güneşten),Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,İstanbul,Normal
+427,Ayhan Işık,Karakovan Balı,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,Ankara,Yüksek
+428,Kartal Tibet,Taş Baskı Zeytinyağı,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,İzmir,Normal
+429,Ediz Hun,Siyez Bulguru,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,Kastamonu,Normal
+430,Türkan Şoray,Ev Yapımı Tarhana,Hazırlanıyor,12 Mayıs 2026,8 Mayıs 2026,,,İstanbul,Yüksek
+431,Hale Soygazi,Köy Tipi Erişte,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,Sivas,Normal
+432,Gülşen Bubikoğlu,Süzme Çiçek Balı,Hazırlanıyor,11 Mayıs 2026,8 Mayıs 2026,,,Konya,Normal
+433,Tarık Tarcan,Salamura Asma Yaprağı,Hazırlanıyor,11 Mayıs 2026,9 Mayıs 2026,,,Manisa,Normal
+434,Suna Pekuysal,Dağ Kekiği,Hazırlanıyor,12 Mayıs 2026,9 Mayıs 2026,,,Muğla,Normal
+435,Zihni Göktay,Ihlamur Çiçek,Hazırlanıyor,12 Mayıs 2026,9 Mayıs 2026,,,Samsun,Normal
+436,Ali Şen,Odun Ateşi Türk Kahvesi,Hazırlanıyor,13 Mayıs 2026,9 Mayıs 2026,,,Trabzon,Normal
+437,Müjde Ar,Kuşburnu Marmelatı,Hazırlanıyor,13 Mayıs 2026,9 Mayıs 2026,,,Sinop,Normal
+438,Perran Kutman,Bıttım Sabunu,Hazırlanıyor,13 Mayıs 2026,9 Mayıs 2026,,,Mardin,Normal
+439,Şevket Altuğ,Eşek Sütü Sabunu,Hazırlanıyor,13 Mayıs 2026,10 Mayıs 2026,,,Antalya,Normal
+440,Sümer Tilmaç,Pamuklu Peştemal,Hazırlanıyor,14 Mayıs 2026,10 Mayıs 2026,,,Aydın,Normal
+441,Erdal Özyağcılar,Doğal Kabak Lifi,Hazırlanıyor,13 Mayıs 2026,10 Mayıs 2026,,,Balıkesir,Normal
+442,Melek Baykal,Saf Gül Suyu,Hazırlanıyor,13 Mayıs 2026,10 Mayıs 2026,,,Isparta,Normal
+443,Zeki Alasya,Bakır El İşlemesi Cezve,Hazırlanıyor,14 Mayıs 2026,10 Mayıs 2026,,,Erzurum,Yüksek
+444,Metin Akpınar,Zeytin Ağacı Sunum Tabağı,Hazırlanıyor,14 Mayıs 2026,10 Mayıs 2026,,,Tekirdağ,Normal
+445,Nevra Serezli,Mermer Havan,Hazırlanıyor,15 Mayıs 2026,10 Mayıs 2026,,,Yalova,Normal

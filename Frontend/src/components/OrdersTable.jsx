@@ -7,32 +7,48 @@ function OrdersTable() {
     fetch("http://127.0.0.1:8000/api/orders")
       .then((response) => response.json())
       .then((data) => {
-        const sortedOrders = [...data].sort((a, b) => {
-         const parseDate = (dateText) => {
+        const parseDate = (dateText) => {
+          if (!dateText) return new Date(0)
+
           const months = {
-          "Ocak": 0,
-          "Şubat": 1,
-          "Mart": 2,
-          "Nisan": 3,
-          "Mayıs": 4,
-          "Haziran": 5,
-          "Temmuz": 6,
-          "Ağustos": 7,
-          "Eylül": 8,
-          "Ekim": 9,
-          "Kasım": 10,
-          "Aralık": 11,
+            Ocak: 0,
+            Şubat: 1,
+            Mart: 2,
+            Nisan: 3,
+            Mayıs: 4,
+            Haziran: 5,
+            Temmuz: 6,
+            Ağustos: 7,
+            Eylül: 8,
+            Ekim: 9,
+            Kasım: 10,
+            Aralık: 11,
+          }
+
+          const [day, monthName, year] = dateText.split(" ")
+          return new Date(Number(year), months[monthName], Number(day))
         }
 
-      const [day, monthName, year] = dateText.split(" ")
-      return new Date(Number(year), months[monthName], Number(day))
-    }
+        const getTrackingNumber = (trackingNumber) => {
+          if (!trackingNumber) return 0
+          return Number(trackingNumber.replace("TRK", ""))
+        }
 
-    return parseDate(b.order_date) - parseDate(a.order_date)
-  })
+        const sortedOrders = [...data].sort((a, b) => {
+          const dateDiff = parseDate(b.order_date) - parseDate(a.order_date)
 
-  setOrders(sortedOrders)
-})
+          if (dateDiff !== 0) {
+            return dateDiff
+          }
+
+          return (
+            getTrackingNumber(b.tracking_number) -
+            getTrackingNumber(a.tracking_number)
+          )
+        })
+
+        setOrders(sortedOrders)
+      })
       .catch((error) => {
         console.error("Sipariş verileri alınamadı:", error)
       })
