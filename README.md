@@ -1,108 +1,79 @@
-# 🤖 SmartOps AI: Yapay Zeka Destekli Yeni Nesil İşletme Asistanı
+# 🤖 SmartOps AI: Yapay Zeka Destekli İşletme Asistanı
 
 **Python • FastAPI • Gemini • React**
 
-SmartOps AI, geleneksel işletme yönetimini bir adım öteye taşıyarak KOBİ’lerin müşteri ilişkilerini, sipariş süreçlerini ve stok takibini tek bir merkezden yapay zeka desteğiyle yönetmesini sağlayan bir prototiptir. Projemizin amacı, işletme sahiplerinin operasyonel yükünü azaltırken müşterilere 7/24 kesintisiz, hızlı ve akıllı bir hizmet sunmaktır.
+SmartOps AI, KOBİ’lerin müşteri iletişimini, sipariş süreçlerini ve stok takibini yapay zeka desteğiyle yönetmesini sağlayan bir işletme otomasyon prototipidir.
+
+Sistem; müşteri sorularını doğal dil ile yanıtlayabilen AI destekli bir asistan, gerçek zamanlı dashboard analizi ve operasyon yönetimi özellikleri sunmaktadır.
 
 ---
 
-# 🌟 Neden SmartOps AI?
+# 🌟 Temel Özellikler
 
-Projemiz, işletmelerin günlük operasyonlarında en çok zaman harcadığı iki temel probleme odaklanmaktadır:
-
-- Müşteri taleplerini hızlı şekilde yanıtlamak
-- Sipariş ve stok süreçlerini etkin yönetmek
-
-## 📦 Akıllı Müşteri Deneyimi
-
-Müşteriler, web arayüzü üzerinden sipariş durumu, teslimat tarihi veya ürün bilgisi sorduğunda, SmartOps AI gerçek verileri analiz ederek saniyeler içerisinde doğal dilde yanıt üretir. Sistem, Twilio tabanlı WhatsApp entegrasyon altyapısını destekleyecek şekilde tasarlanmıştır.
-
-## 📊 AI Destekli Veri Odaklı Yönetim
-
-İşletme sahipleri dashboard üzerinden:
-
-- kritik stok durumlarını,
-- sipariş yoğunluğunu,
-- haftalık sipariş analizlerini,
-- teslimat süreçlerini,
-- müşteri mesaj eğilimlerini
-
-anlık olarak görüntüleyebilir.
-
-Dashboard sistemi, müşteri mesajlarını analiz ederek operasyonel içgörüler üretir ve AI destekli günlük operasyon özeti oluşturur.
-
-## ⚡ Ölçeklenebilir Altyapı
-
-Gerçekçi ürün ve sipariş senaryolarıyla test edilen sistem, genişletilebilir bir backend mimarisi üzerine kurulmuştur.
-
----
-
-# 🚀 Prototip Özellikleri
-
-## 🤖 AI Chatbot (Web Destekli & WhatsApp Entegrasyonuna Hazır)
+## 🤖 AI Müşteri Asistanı
 
 Gemini 2.5 Flash modeli ile güçlendirilen yapay zeka asistanı:
 
 - sipariş sorgulama,
-- ürün bilgisi,
 - stok kontrolü,
-- teslimat bilgisi
+- ürün bilgisi,
+- teslimat durumu,
+- fiyat bilgisi
 
 gibi işlemleri doğal dil üzerinden gerçekleştirebilir.
 
 ---
 
-## 📦 Akıllı Sipariş Sorgulama
+## 📦 Sipariş ve Teslimat Yönetimi
 
-Müşteriler yalnızca sipariş numaralarını yazarak:
+Müşteriler:
 
 - sipariş durumunu,
 - takip numarasını,
-- tahmini teslimat tarihini,
-- teslimat sürecini
+- teslimat sürecini,
+- tahmini teslim tarihini
 
-öğrenebilir.
-
----
-
-## 📈 Dinamik Envanter ve Sipariş Analizi
-
-CSV tabanlı ürün ve sipariş verileri işlenerek dashboard üzerinde:
-
-- canlı stok takibi,
-- sipariş yoğunluğu analizi,
-- şehir bazlı sipariş görüntüleme,
-- teslimat süreci yönetimi
-
-dinamik olarak sağlanmaktadır.
+anlık olarak öğrenebilir.
 
 ---
 
-## 🚨 Kritik Stok Uyarı Sistemi
+## 📊 AI Destekli Dashboard
 
-Kritik eşik seviyesinin altına düşen ürünler dashboard üzerinde otomatik olarak işaretlenir.
-
----
-
-## 📊 AI Destekli Yönetici Dashboard Sistemi
-
-Dashboard üzerinden:
+Yönetici panelinde:
 
 - toplam sipariş,
 - hazırlanmakta olan siparişler,
 - kargodaki siparişler,
 - kritik stok uyarıları,
 - haftalık sipariş yoğunluğu,
-- müşteri mesaj analizleri,
-- operasyonel AI özetleri
+- müşteri mesaj analizleri
 
-anlık olarak görüntülenebilir.
+gerçek zamanlı görüntülenebilir.
 
-Dashboard, gerçek backend verileriyle çalışmakta ve müşteri mesaj eğilimlerine göre dinamik operasyon analizi üretmektedir.
+Dashboard sistemi müşteri mesajlarını analiz ederek operasyonel içgörü üretmektedir.
 
 ---
 
-# 🧠 Yapay Zeka Yaklaşımımız
+## 📈 Dinamik Veri Yönetimi
+
+Sistem:
+
+- `products.csv`
+- `orders.csv`
+
+dosyalarındaki verileri SQLite veritabanına aktarır.
+
+Sipariş tarihleri analiz edilerek haftalık sipariş yoğunluğu grafikleri oluşturulur.
+
+---
+
+## 🚨 Kritik Stok Uyarı Sistemi
+
+Kritik stok seviyesinin altına düşen ürünler dashboard üzerinde otomatik olarak işaretlenir.
+
+---
+
+# 🧠 Yapay Zeka Yaklaşımı
 
 ## 🔧 Function Calling Tabanlı AI Agent
 
@@ -115,40 +86,19 @@ Sistem:
 - veritabanından veri çeker,
 - doğal dilde yanıt üretir.
 
-Bu yaklaşım sayesinde bilgi uydurma (hallucination) riski azaltılmıştır.
+Bu yaklaşım sayesinde hallucination riski azaltılmıştır.
 
 ---
 
 ## 📡 AI Destekli Mesaj Analizi
 
-Sistem, müşteri mesajlarını analiz ederek:
+Sistem müşteri mesajlarını analiz ederek:
 
-- teslimat odaklı sorguları,
-- stok sorgularını,
-- fiyat sorgularını
+- teslimat,
+- stok,
+- fiyat
 
-kategorize eder.
-
-Bu analizler dashboard üzerinde operasyonel içgörü olarak görüntülenir ve işletme sahiplerinin müşteri taleplerini daha iyi anlamasına yardımcı olur.
-
----
-
-## 🗂 Veri ile Etkileşim
-
-Sistem:
-
-- `products.csv`
-- `orders.csv`
-
-dosyalarından alınan verileri SQLite veritabanına aktarır.
-
-Sipariş tarihleri analiz edilerek haftalık sipariş yoğunluğu grafikleri oluşturulur ve dashboard üzerinde gerçek zamanlı görselleştirilir.
-
----
-
-## 🛡️ Hata Yönetimi
-
-API kota limitleri ve bağlantı problemleri için hata yönetim mekanizmaları geliştirilmiştir. Böylece kullanıcı deneyiminin kesintiye uğramaması hedeflenmiştir.
+eğilimlerini belirler ve dashboard üzerinde operasyonel analiz olarak görüntüler.
 
 ---
 
@@ -156,60 +106,38 @@ API kota limitleri ve bağlantı problemleri için hata yönetim mekanizmaları 
 
 ## 🎨 Frontend
 
-Modern kullanıcı arayüzü:
-
 - React
 - Vite
 - TailwindCSS
-
-teknolojileri kullanılarak geliştirilmiştir.
 
 ---
 
 ## ⚙️ Backend
 
-Backend tarafında:
-
 - Python
 - FastAPI
 
-kullanılmıştır.
-
-FastAPI’nin hızlı ve modern yapısı sayesinde API iletişimi optimize edilmiştir.
-
 ---
 
-## 🗄️ Veritabanı Katmanı
-
-Veriler:
+## 🗄️ Veritabanı
 
 - SQLite
 - SQLAlchemy ORM
-
-kullanılarak yönetilmektedir.
 
 ---
 
 ## 🤖 Yapay Zeka Katmanı
 
-Yapay zeka altyapısında:
-
 - Google Gemini 2.5 Flash
 - Function Calling yaklaşımı
 
-kullanılmaktadır.
-
-Gemini modeli hem müşteri destek asistanı olarak çalışmakta hem de operasyonel veri analizi süreçlerinde kullanılmaktadır.
-
 ---
 
-# 🔗 Harici Sistem Entegrasyonları
-
-SmartOps AI aşağıdaki sistemlerle entegre çalışmaktadır:
+# 🔗 Entegrasyonlar
 
 - Google Gemini API
-- FastAPI REST API yapısı
-- SQLite Veritabanı
+- FastAPI REST API
+- SQLite
 - Twilio Webhook API
 
 Twilio tabanlı WhatsApp entegrasyonu prototip seviyesinde desteklenmektedir.
@@ -223,7 +151,7 @@ Twilio tabanlı WhatsApp entegrasyonu prototip seviyesinde desteklenmektedir.
 - Python 3.9+
 - Node.js
 - Google Gemini API Key
-- Ngrok (Opsiyonel, webhook testleri için)
+- Ngrok (Opsiyonel)
 
 ---
 
@@ -231,6 +159,7 @@ Twilio tabanlı WhatsApp entegrasyonu prototip seviyesinde desteklenmektedir.
 
 ```bash
 git clone https://github.com/Rabianur1/kobi-otomasyon-hackathon.git
+
 cd kobi-otomasyon-hackathon
 ```
 
@@ -294,6 +223,17 @@ http://localhost:5173
 ```
 
 adresinde aktif olacaktır.
+
+---
+
+# 🔐 Demo Giriş Bilgileri
+
+Satıcı paneli için:
+
+```text
+Kullanıcı Adı: admin
+Şifre: 1234
+```
 
 ---
 
